@@ -1,0 +1,247 @@
+body{
+  background: url("./background.png") no-repeat center center fixed;
+  color: white;
+  }
+body .top nav{
+text-align: right;
+//background-color: #008080;
+border-radius: 10px;
+}
+body nav ul{
+display: inline-flex;
+list-style-type:none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-container ul {
+    display: flex;
+}
+  
+.nav-container a {
+    text-decoration: none;
+    color: white;
+}
+  
+.name-avatar img {
+    width: 75px;
+    height: 75px;
+    clip-path: circle();
+    box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.75);
+}
+  
+.name-avatar h2 {
+    color: white;
+
+    font-family: 'Bebas Neue', cursive;
+font-family: 'M PLUS 2', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Shippori Antique B1', sans-serif;
+}
+  
+.name-avatar {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-evenly;
+}
+.header-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    //background-color:#008080;
+    border-radius: 20px;
+}
+
+.land {
+    /* border: 2px solid yellow; */
+    padding-top: 15%;
+    padding-bottom: 7%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+body .intro {
+    text-align: center;
+  }
+  
+  .intro h1 {
+    font-size: 75px;
+    color: white;
+  }
+  
+  .intro h2 {
+    color: #8c8c8c;
+  }  
+
+body .top nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+body .top nav ul li:hover::after{
+    width: 70%;
+}
+body nav ul li a{
+color: white;
+text-decoration: none;
+padding-right: 15px;
+}
+
+.about{
+margin: auto;
+padding: 15% 10% 25% 10%;
+display: flex;
+}
+.about div p{
+font-family: 'M PLUS 2', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Shippori Antique B1', sans-serif;
+}
+.about div h2{
+color:aliceblue;
+font-family: 'Bebas Neue', cursive;
+font-family: 'M PLUS 2', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Shippori Antique B1', sans-serif;
+}
+.about h2{
+    color:aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'M PLUS 2', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+.nav_div li{
+display: inline;
+}
+.about div img{
+width: 250px;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+.about h1{
+font-family: 'Playfair Display SC', serif;
+}
+.about p{
+font-family: 'Istok Web', sans-serif;
+font-family: 'Playfair Display SC', serif;
+color: #008080;
+}
+
+.scroll img {
+    position: relative;
+    top: 50px;
+}
+
+.bounce {
+    animation: bounce 5s infinite;
+    -webkit-animation: bounce 5s infinite;
+  }
+  
+  @-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -webkit-transform: translateY(0);
+    }
+    10% {
+      -webkit-transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+    }
+  }
+
+#projects{
+width: 100%;
+height: auto;
+text-align: center;
+font-family: 'Istok Web', sans-serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Spectral', serif;
+color: #000000;
+
+}
+.grid{
+display: inline-grid;
+grid-template-columns: auto auto auto;
+}
+.grid-item{
+padding-right: 20px;
+}
+#projects img{
+width: 400px;
+}
+.grid a{
+color: #000000;
+text-decoration: none;
+font-family: 'Istok Web', sans-serif;
+font-family: 'Maven Pro', sans-serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Spectral', serif;
+}
+.grid h2{
+background-color: #3F7FBF;
+border-radius: 5px;
+}
+#projects{
+background-color:#008080;
+border-radius: 10px;
+}
+.contacts{
+text-align: center;
+}
+#git{
+animation-name: spin;
+animation-duration: 5000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.contacts h1{
+padding-top: 10%;
+color:aliceblue;
+font-family: 'Istok Web', sans-serif;
+font-family: 'Maven Pro', sans-serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Spectral', serif;
+}
+.contacts p{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'M PLUS 2', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Shippori Antique B1', sans-serif;
+    color: white;
+}
+.contacts nav{
+padding-bottom: 20%;
+}
+#line{
+border-top: 3px solid #008080;
+width: 100%; 
+}
